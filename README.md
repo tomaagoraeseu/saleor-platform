@@ -16,6 +16,12 @@ All Saleor services started from a single repository
 $ git clone https://github.com/mirumee/saleor-platform.git --recursive --jobs 3
 ```
 
+Or run this if you already cloned the repo:
+
+```
+$ git submodule update --init --recursive
+```
+
 2. We are using shared folders to enable live code reloading. Without this, Docker Compose will not start:
     - Windows/MacOS: Add the cloned `saleor-platform` directory to Docker shared directories (Preferences -> Resources -> File sharing).
     - Windows/MacOS: Make sure that in Docker preferences you have dedicated at least 5 GB of memory (Preferences -> Resources -> Advanced).
